@@ -13,3 +13,29 @@
 /* ################################## */
             /*Fonts*/
 /* ################################## */
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+/* SELECTION para ACTIVAR DEBES DESCOMENTAR
+::selection {
+  display: none;
+}
+ SELECTION */
+
+/* SCROLLBAR */
+::scrollbar {
+  display: none;
+}
+/* SCROLLBAR */
