@@ -28,14 +28,14 @@ ul {
   list-style: none !important;
 }
 
-/* SELECTION para ACTIVAR DEBES DESCOMENTAR
+/* SELECTION para ACTIVAR DEBES DESCOMENTAR */
 ::selection {
   display: none;
 }
- SELECTION */
+/* SELECTION */
 
 /* SCROLLBAR */
-::scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 /* SCROLLBAR */
