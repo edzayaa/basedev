@@ -28,6 +28,11 @@ ul {
   list-style: none !important;
 }
 
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* SELECTION para ACTIVAR DEBES DESCOMENTAR */
 ::selection {
   display: none;
