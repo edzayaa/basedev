@@ -44,3 +44,7 @@ html {
   display: none;
 }
 /* SCROLLBAR */
+
+body {
+  background-color: #2d2d2d;
+}
