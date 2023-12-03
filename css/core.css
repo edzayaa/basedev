@@ -9,11 +9,21 @@
 /* ################################## */
             /*Fonts*/
 /* ################################## */
-@import url();
+@import url(fonts/);
 /* ################################## */
             /*Fonts*/
 /* ################################## */
 
+/* ################################## */
+            /*Plugins*/
+/* ################################## */
+/* Banner cookies */
+@import url(plugins/cookies.css);
+/* ################################## */
+            /*Plugins*/
+/* ################################## */
+
+/* Default */
 *,*::after,*::before {
   margin: 0;
   padding: 0;
@@ -32,6 +42,7 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+/* Default */
 
 /* SELECTION para ACTIVAR DEBES DESCOMENTAR */
 ::selection {
@@ -46,5 +57,5 @@ html {
 /* SCROLLBAR */
 
 body {
-  background-color: #2d2d2d;
+  background-color: #0E100F;
 }
