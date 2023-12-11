@@ -20,4 +20,4 @@ Codebase to guide your development process.
   cd basedev
 ```
 
-3. Start the server with Live Server
+3. Start the server with Live Server Extension or your prefered local server
