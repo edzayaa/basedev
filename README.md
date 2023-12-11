@@ -5,6 +5,7 @@ Codebase to guide your development process.
 - CSS media queries structure.
 - HTML boilerplate.
 - Project structure.
+- Animation examples.
 
 ## Run Locally
 
