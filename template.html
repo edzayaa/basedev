@@ -17,7 +17,7 @@
     <meta property="og:description" content="Lorem ipsum" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="Welcome to" />
-    <meta property="og:image" content="{{ url_for('static', filename='img/redsocial.jpg') }}" />
+    <meta property="og:image" content="" />
     <meta property="og:image:width" content="1461" />
     <meta property="og:image:height" content="737" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,166 +33,32 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
     <link rel="stylesheet" href="css/core.css">
     <style>
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
-body {
-  background: #222;
-  color: #fff;
-}
-
-svg {
-  overflow: visible !important;
-}
-
-.parallax-section {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  top: 0;
-  padding: 0 1rem;
-  transform-origin: center top;
-}
-
-.parallax-image {
-  height: 200vh;
-  width: 100%;
-  object-fit: cover;
-  will-change: transform;  
-}
-
-.logo-section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
-.logo-section svg {
-  width: 60%;
-}
-
-.grid-section {
-  width: 100%;
-  overflow: visible;
-  z-index: 2;
-}
-
-.grid-layout {
-  display: flex;
-  display: grid;
-  height: 100%;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  transform-origin: center top;
-}
-
-.column {
-  height: 100%;
-}
-
-.panel {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.column-content {
-  display: grid;
-  grid-template-rows: 45vh 45vh 45vh;
-  grid-gap: 1rem;
-  height: 100%;
-}
-
-.grid-image {
-  width: 100%;  
-}
-
-.grid-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.pin-section {
-  height: 100vh;
-  overflow: hidden;
-  display: grid;
-  grid-row-gap: 1rem;
-  grid-template-rows: 1fr 1fr;
-}
-
-.pin-content {
-  width: 300%;  
-  display: grid;
-  grid-column-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  will-change: transform;
-}
-
-.pin-box {
-  height: 100%;
-  width: 100%;
-}
-
-.pin-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .spacer {
-  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.scroll-letter {
-  fill: #fff;
-}
-
-.smoother-letter,
-#mouse-wheel {
-  fill: #88ce02;
-}
-
-.by-greensock-letter {
-  fill: #fff;
-  opacity: 0.6;
-}
-
-#mouse-outline {
-  fill: none;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 13px;
 }
 
     </style>
 </head>
 <body>
 
+  <nav>
+    <button id="section1Btn">Section 1</button>
+    <button id="section2Btn">Section 2</button>
+    <button id="section3Btn">Section 3</button>
+  </nav>
+
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="spacer" style="height: 100vh;" data-speed="0.5">
-        <div>Lorem ipsum</div>
+      <div class="spacer" style="height: 100vh;" data-speed="0.5" id="section1">
+        <div style="font-size: 40px;color: #fff;">Lorem ipsum</div>
       </div>
-      <div class="spacer splittext1" style="height: 100vh;" data-speed="2">
-        <div class="splittext1">Pretty smooth, huh?</div>
+      <div class="spacer splittext1" style="height: 100vh;" data-speed="1" id="section2">
+        <div class="splittext1" style="font-size: 40px;color: #fff;">Pretty smooth, huh?</div>
       </div>
-      <div class="spacer" style="height: 100vh;" data-speed="1">
-        <div>Pretty smooth, huh?</div>
+      <div class="spacer" style="height: 100vh;" data-speed="1" id="section3">
+        <div style="font-size: 40px;color: #fff;">Pruebas</div>
       </div>
     </div>
   </div>
@@ -392,6 +258,8 @@ svg {
     
     <!--=============== Customs Scripts ===============-->
     <script src='js/scrollSmoother.js'></script>
+    <script src='js/scrollto.js'></script>
     <script src='js/splittext.js'></script>
+    
   </body>
 </html>

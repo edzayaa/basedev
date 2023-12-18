@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <title>ScrollTo</title>
-      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="../../single-style.css">
    </head>
    <body>
       <div class="navleft">
@@ -31,7 +31,7 @@
       <div class="blog-header-container">
          <div class="blog-header">
             <div class="blog-article header-article splittext1">
-               <div class="blog-big__title">Effect 1</div>
+               <div class="blog-big__title">ScrollTo</div>
                <p style="text-align: center;">Lorem ipsum lorem ipsum</p>
             </div>
             <div class="blog-article">
@@ -39,7 +39,46 @@
                   <input type="checkbox" name="accordion-1" id="cb1">
                   <label for="cb1" class="tab__label">Quick start</label>
                   <div class="tab__content">
-                    <p>Add this class "splittext1" to your code.</p>
+                     <pre>
+                        <code class="language-css">
+                           document.querySelectorAll("nav button").forEach((btn, index) => {
+                              btn.addEventListener("click", () => {
+                                gsap.to(window, {
+                                  duration: 1, 
+                                  scrollTo:{
+                                      y:"#section" + (index + 1), 
+                                      offsetY:70
+                                  }});
+                                  ease: "power2"
+                              });
+                          });
+                        </code>
+                     </pre>
+                     <p>Add this id "section" to your tag "section>"</p>
+                  </div>
+                </div>
+            </div>
+         </div>
+         <div class="blog-header">
+            <div class="blog-article header-article">
+               <div class="blog-big__title">Add buttons</div>
+               <p style="text-align: center;">Lorem ipsum lorem ipsum</p>
+            </div>
+            <div class="blog-article">
+               <div class="tab">
+                  <input type="checkbox" name="accordion-1" id="cb2">
+                  <label for="cb2" class="tab__label">Quick start</label>
+                  <div class="tab__content">
+                     <pre>
+                        <code class="language-css">
+                           nav
+                              button id="section1Btn">Section 1 button>
+                              button id="section2Btn">Section 2 button>
+                              button id="section3Btn">Section 3 button>
+                           nav
+                        </code>
+                     </pre>
+                     <p>Add this code to your "section"</p>
                   </div>
                 </div>
             </div>
@@ -103,6 +142,8 @@
          <script src='../../../../librarys/gsap/TextPlugin.min.js'></script>
 
       <!--=============== Customs Scripts ===============-->
+      <script src='../../../../js/scrollSmoother.js'></script>
+      <script src='../../../../js/scrollto.js'></script>
       <script src='../../../../js/splittext.js'></script>
     </body>
 </html>
