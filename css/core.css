@@ -37,11 +37,6 @@ a {
 ul {
   list-style: none !important;
 }
-
-html {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
 /* Default */
 
 /* SELECTION para ACTIVAR DEBES DESCOMENTAR */
@@ -56,6 +51,69 @@ html {
 }
 /* SCROLLBAR */
 
+/* HTML */
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+/* HTML */
+
+/* Body */
 body {
   background-color: #0E100F;
 }
+/* Body */
+
+/* Fixed's */
+  /* Top */
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* Top */
+  /* Top right */
+  .fixed-top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  /* Top right */
+  /* Top left */
+  .fixed-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  /* Top left */
+
+  /* Bottom */
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* Bottom */
+  /* Bottom right */
+  .fixed-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  /* Bottom right */
+  /* Bottom left */
+  .fixed-bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  /* Bottom left */
+/* Fixed's */

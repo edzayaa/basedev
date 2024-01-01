@@ -8,7 +8,7 @@ document.querySelectorAll("nav button").forEach((btn, index) => {
         scrollTo:{
             y:"#section" + (index + 1), 
             offsetY:70
-        }});
+        },
         ease: "power2"
     });
-});
+})});

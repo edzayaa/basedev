@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#D8D8D8">
@@ -33,35 +33,34 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
     <link rel="stylesheet" href="css/core.css">
     <style>
-.spacer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+      .spacer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    
+    <nav class="fixed-top-right">
+      <button id="section1Btn">Section 1</button>
+      <button id="section2Btn">Section 2</button>
+      <button id="section3Btn">Section 3</button>
+    </nav>
 
-  <nav>
-    <button id="section1Btn">Section 1</button>
-    <button id="section2Btn">Section 2</button>
-    <button id="section3Btn">Section 3</button>
-  </nav>
-
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <div class="spacer" style="height: 100vh;" data-speed="0.5" id="section1">
-        <div style="font-size: 40px;color: #fff;">Lorem ipsum</div>
-      </div>
-      <div class="spacer splittext1" style="height: 100vh;" data-speed="1" id="section2">
-        <div class="splittext1" style="font-size: 40px;color: #fff;">Pretty smooth, huh?</div>
-      </div>
-      <div class="spacer" style="height: 100vh;" data-speed="1" id="section3">
-        <div style="font-size: 40px;color: #fff;">Pruebas</div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div class="spacer" style="height: 100vh;" data-speed="0.5" id="section1">
+          <div style="font-size: 40px;color: #fff;">Lorem ipsum</div>
+        </div>
+        <div class="spacer splittext1" style="height: 100vh;" data-speed="1" id="section2">
+          <div class="splittext1" style="font-size: 40px;color: #fff;">Pretty smooth, huh?</div>
+        </div>
+        <div class="spacer" style="height: 100vh;" data-speed="1" id="section3">
+          <div style="font-size: 40px;color: #fff;">Pruebas</div>
+        </div>
       </div>
     </div>
-  </div>
 
     <!-- Plugins -->
         <!-- Cookies banner-->
@@ -258,6 +257,7 @@
     
     <!--=============== Customs Scripts ===============-->
     <script src='js/scrollSmoother.js'></script>
+    <script src='js/scrollTrigger.js'></script>
     <script src='js/scrollto.js'></script>
     <script src='js/splittext.js'></script>
     

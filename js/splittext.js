@@ -20,6 +20,8 @@ function splitText1() {
                 trigger: quote,
                 toggleActions: "restart pause resume reverse",
                 start: "top 50%",
+                scrub: true,
+                id: "scrub",
             },
             duration: 0.6, 
             ease: "circ.out", 
