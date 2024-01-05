@@ -42,6 +42,7 @@
   </head>
   <body>
     
+    <!-- Your content -->
     <nav class="fixed-top-right">
       <button id="section1Btn">Section 1</button>
       <button id="section2Btn">Section 2</button>
@@ -50,13 +51,14 @@
 
     <div id="wrapper">
       <div id="content">
+        <!-- Your Content -->
         <div class="trigger">
           <div class="box" style="background-color: green !important;width: 50px;height: 50px;"></div>
         </div>
-        <div class="spacer" style="height: 100vh;" data-speed="0.5" id="section1">
+        <div class="spacer" style="height: 100vh;" data-lag="2" id="section1">
           <div style="font-size: 40px;color: #fff;">Lorem ipsum</div>
         </div>
-        <div class="spacer splittext1" style="height: 100vh;" data-speed="1" id="section2">
+        <div class="spacer splittext1" style="height: 100vh;" data-speed="0.5" id="section2">
           <div class="splittext1" style="font-size: 40px;color: #fff;">Pretty smooth, huh?</div>
         </div>
         <div class="spacer" style="height: 100vh;" data-speed="1" id="section3">
@@ -64,6 +66,7 @@
         </div>
       </div>
     </div>
+    <!-- End Your content -->
 
     <!-- Plugins -->
         <!-- Cookies banner-->
@@ -254,6 +257,9 @@
         <script src='librarys/gsap/ScrollTrigger.min.js'></script>
         <script src='librarys/gsap/SplitText.min.js'></script>
         <script src='librarys/gsap/TextPlugin.min.js'></script>
+        
+        <!--=============== Scripts THREEJS ===============-->
+
 
     <!--=============== Plugins Scripts ===============-->
     <script src='js/plugins/cookies.js'></script>
