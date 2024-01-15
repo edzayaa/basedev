@@ -102,6 +102,18 @@ a {
   gap: 2em;
 }
 
+.epaleiframe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2em;
+}
+
+
+
 /* Footer */
 
 footer {
