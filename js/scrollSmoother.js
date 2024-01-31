@@ -4,8 +4,6 @@ Init ScrollSmoother // Inicio de ScrollSmoother
 // create the scrollSmoother before your scrollTriggers
 // crea el scrollSmoother antes de tus scrollTriggers
 const smoother = ScrollSmoother.create({
-  content: smooth-content, // id del contenido
-  wrapper: smooth-wrapper, // id del scroll
   // how long (in seconds) it takes to "catch up" to the native scroll position
   smooth: 1,  // cuánto tiempo (en segundos) tarda en "alcanzar" la posición de desplazamiento nativa
   // looks for data-speed and data-lag attributes on elements 
