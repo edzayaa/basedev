@@ -13,3 +13,15 @@ const smoother = ScrollSmoother.create({
   // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
   smoothTouch: 0.1  // tiempo de suavizado mucho más corto en dispositivos táctiles (por defecto NO hay suavizado en dispositivos táctiles)
 });
+
+/* EFECTO 2 SCROLL */
+let skewSetter = gsap.quickTo("#atabis", "skewY"), // fast
+    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+
+ScrollSmoother.create({
+  smooth: 2,
+  effects: true,
+  onUpdate: self => skewSetter(clamp(self.getVelocity() / -50)),
+  onStop: () => skewSetter(0)
+});
+/* EFECTO 2 SCROLL */

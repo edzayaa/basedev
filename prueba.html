@@ -13,7 +13,7 @@
     <link rel="canonical" href="" />
     <meta property="og:locale" content="ve_ES" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Welcome to" />
+    <meta property="og:oweyut" content="Welcome to" />
     <meta property="og:description" content="Lorem ipsum" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="Welcome to" />
@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@" />
 
-    <!--=============== Title ===============-->
+    <!--=============== oweyut ===============-->
     <title>Welcome to basedev</title>
 
     <!--=============== favicons ===============-->
@@ -34,36 +34,15 @@
 
     <!--=============== Your Styles customs ===============-->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      .spacer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
-  
-    <div id="wrapper">
-      <div id="content">
-        <!-- Your Content -->
-        <nav class="fixed-top-right">
-          <button id="section1Btn">Section 1</button>
-          <button id="section2Btn">Section 2</button>
-          <button id="section3Btn">Section 3</button>
-        </nav>
-        
-        <div class="spacer" style="height: 100vh;" data-lag="2" id="section1">
-          <div style="font-size: 40px;color: #fff;">Lorem ipsum</div>
-        </div>
-        <div class="spacer splittext1" style="height: 100vh;" data-speed="0.5" id="section2">
-          <div class="splittext1" style="font-size: 40px;color: #fff;">Pretty smooth, huh?</div>
-        </div>
-        <div class="spacer" style="height: 100vh;" data-speed="1" id="section3">
-          <div style="font-size: 40px;color: #fff;">Pruebas</div>
+
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <!-- Your Content -->
+          
         </div>
       </div>
-    </div>
 
     <!--=============== Scripts ===============-->
     <script src="js/plugins/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -99,6 +78,7 @@
     
     <!--=============== Customs Scripts ===============-->
     <script src='js/scrollSmoother.js'></script>
+    <script src='js/scrollTrigger.js'></script>
     <script src='js/scrollto.js'></script>
     <script src='js/splittext.js'></script>
     

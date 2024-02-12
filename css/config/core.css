@@ -52,6 +52,7 @@ html {
 /* Body */
 body {
   background-color: #0E100F;
+  color: #fff;
 }
 /* Body */
 
@@ -108,3 +109,559 @@ body {
   }
   /* Bottom left */
 /* Fixed's */
+
+
+/* COMPONENTS */
+  /* EFECTO 1 SCROLL */
+  svg {
+    overflow: visible !important;
+  }
+  
+  .azayof {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    padding: 0 1rem;
+    transform-origin: center top;
+  }
+  
+  .unucew {
+    height: 200vh;
+    width: 100%;
+    object-fit: cover;
+    will-change: transform;  
+  }
+  
+  .ehivoc {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  
+  .eyedak {
+    width: 100%;
+    overflow: visible;
+    z-index: 2;
+  }
+  
+  .axodaq {
+    display: flex;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    transform-origin: center top;
+  }
+  
+  .ewocay {
+    height: 100%;
+  }
+  
+  .panel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .usuvey {
+    display: grid;
+    grid-template-rows: 45vh 45vh 45vh;
+    grid-gap: 1rem;
+    height: 100%;
+  }
+  
+  .osufig {
+    width: 100%;  
+  }
+  
+  .osufig img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ofaviv {
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .oceqar {
+    width: 300%;  
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    will-change: transform;
+  }
+  
+  .onurog {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .owigov {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .udepez {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ekoyuj {
+    fill: #fff;
+  }
+  
+  .smoother-letter,
+  #mouse-wheel {
+    fill: #88ce02;
+  }
+  
+  .by-greensock-letter {
+    fill: #fff;
+    opacity: 0.6;
+  }
+  
+  #mouse-outline {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 13px;
+  }
+  /* EFECTO 1 SCROLL */
+  /* EFECTO 2 SCROLL */
+  .ofusok {
+    position: fixed;
+    top: 50vh;
+    font-family: termina, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 8vw;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    z-index: 2;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    z-index: -2;
+  }
+  
+  .ofuzaj {
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    z-index: 2;
+  }
+  
+  .ofacop {
+    mix-blend-mode: screen;
+    color: #804691;
+    z-index: 2;
+  }
+  
+  .ecibab {
+    padding-top: 60vh;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 150vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 2%);
+    grid-template-rows: repeat(30, 3%);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    object-fit: cover;
+  }
+  
+  .content__slide-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  img:nth-child(1) {
+    grid-area: 1/1/6/8;
+  }
+  
+  img:nth-child(2) {
+    grid-area: 3/12/8/20;
+  }
+  
+  img:nth-child(3) {
+    grid-area: 9/5/13/15;
+  }
+  
+  img:nth-child(4) {
+    grid-area: 14/1/18/8;
+  }
+  
+  img:nth-child(5) {
+    grid-area: 16/12/20/19;
+  }
+  
+  img:nth-child(6) {
+    grid-area: 20/2/25/9;
+  }
+  
+  img:nth-child(7) {
+    grid-area: 22/11/24/20;
+  }
+  
+  img:nth-child(8) {
+    grid-area: 26/5/30/15;
+  }
+  /* EFECTO 2 SCROLL */
+  /* EFECTO 3 SCROLL */
+  :root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+    (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+  }
+
+  @media screen and (min-width: 1140px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+  }
+
+  :root {
+  --f-0-min: 18;
+  --f-0-max: 20;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+    var(--fluid-bp)
+  );
+
+  --f-1-min: 20;
+  --f-1-max: 24;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+    var(--fluid-bp)
+  );
+  }
+
+  section {
+  min-height: 100vh;
+  }
+
+  p {
+  line-height: 1.35;
+  }
+
+  #content {
+  padding: 0 0.75rem;
+  }
+
+  .erubej {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+  margin: 0;
+  }
+
+  .abecuh > * + * {
+  margin-top: 2em;
+  }
+
+  .ifijij > * + * {
+  margin-top: 1em;
+  }
+
+  .oweyut {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  }
+
+  #content {
+  overflow: visible;
+  width: 100%;
+  }
+
+  .oqasup {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  }
+
+  h1 {
+  font-size: clamp(12px, 8vw, 100px);
+  text-align: center;
+  line-height: 0.67;
+  margin: 0 auto;
+  font-family: "wild_worldbold";
+
+  .irugeb {
+    font-family: "Open sans", sans-serif;
+    font-size: clamp(12px, 3vw, 40px);
+    font-weight: 400;
+  }
+  }
+
+  .oqasup p {
+  font-family: "wild_worldbold";
+  font-size: 15.5vw;
+  font-size: clamp(12px, 15.5vw, 250px);
+  text-align: center;
+  line-height: 0.67;
+  margin: 0;
+  text-align: center;
+  color: #111;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  z-index: -10;
+  }
+
+  .intro,
+  h2,
+  h3 {
+  font-size: var(--step-1);
+  font-weight: 500;
+  }
+
+  .opazoz {
+  position: relative;
+  }
+
+  .opazoz p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  color: transparent;
+  }
+
+  .opazoz p:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  color: white;
+  }
+
+  .uxewom {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0.2rem;
+  grid-row-gap: 0.2rem;
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 40vh;
+  z-index: -1;
+
+  .oqiseq {
+    position: relative;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+  }
+
+  .oqiseq:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .oqiseq:nth-child(2) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .oqiseq:nth-child(3) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  }
+
+  .unucews {
+  margin-top: 10vh;
+  padding: 10rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 20vh;
+  align-items: center;
+  justify-items: center;
+
+  .oqiseq {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    height: 140%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .parallax-text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .oqiseq:nth-child(2) {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .oqiseq:nth-child(3) {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+  }
+
+  .udepez {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .stagger {
+  font-size: 8vw;
+  }
+
+  .arodav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+
+  .uzujej {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .ubidis {
+    flex: 1 1 500px;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    align-items: flex-end;
+  }
+
+  .iqanun {
+    border-radius: 10px;
+    margin: 2vw;
+    text-align: center;
+    flex: 1 0 auto;
+    font-size: var(--step-0);
+    justify-self: flex-end;
+    font-family: "wild_worldbold";
+    font-size: clamp(16px, 3vw, 36px);
+  }
+  }
+
+  .izonif {
+  border-left: solid 1px white;
+  padding: 0.5rem 2rem;
+  }
+
+  .staggered {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+
+  h3 {
+    font-family: "wild_worldbold";
+    font-size: clamp(16px, 6vw, 80px);
+    letter-spacing: 0.03em;
+  }
+
+  &_text {
+    flex: 1 1 300px;
+  }
+
+  &_demo {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+
+  .eduhof {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+  }
+  }
+
+  .inegin {
+  display: flex;
+  align-items: center;
+  }
+  /* EFECTO 3 SCROLL */
+/* COMPONENTS */
