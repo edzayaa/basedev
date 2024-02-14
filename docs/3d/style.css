@@ -1,6 +1,6 @@
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
-  background-color: #212121;
+  background-color: #0E100F;
   color: #ddd;
 }
 
@@ -102,6 +102,17 @@ a {
   gap: 2em;
 }
 
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 8rem;
+}
+footer a {
+  color: white;
+  font-size: 26px;
+}
+/* Footer */
 
 /** Card **/
 
@@ -113,10 +124,22 @@ a {
   width: 22em;
   max-width: 80%;
   padding: 2em 0;
-  background: #d2ceff;
+  background: #fff;
   box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
   transition: all 0.35s ease;
   border-radius: 1rem;
+}
+.card.backscroll {
+  background-color: #ffd7fd !important;
+}
+.card.backsvg {
+  background-color: #ffe3c7 !important;
+}
+.card.backui {
+  background-color: #bef3fe !important;
+}
+.card.backtext {
+  background-color: #d2ceff !important;
 }
 .card::before, .card::after {
   content: "";
@@ -144,7 +167,8 @@ a {
 }
 .card svg {
   margin: 0 0 1em;
-  width: 10.625em;
+  width: 10em;
+  height: 10em;
   transition: all 0.35s ease;
 }
 .card h6 {

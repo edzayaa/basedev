@@ -39,10 +39,10 @@ splitText1();
 // Fin effect1
 
 /* Efecto 3 scroll */
-gsap.set(".ejajoy", {
-    yPercent: -150,
-    opacity: 1
-   });
+    gsap.set(".ejajoy", {
+        yPercent: -150,
+        opacity: 1
+    });
    
    let tl = gsap.timeline();
    let mySplitText = new SplitText("#split-stagger", { type: "words,chars" });
