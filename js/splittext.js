@@ -39,7 +39,7 @@ splitText1();
 // Fin effect1
 
 /* Efecto 3 scroll */
-gsap.set(".oqasup", {
+gsap.set(".ejajoy", {
     yPercent: -150,
     opacity: 1
    });

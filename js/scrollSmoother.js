@@ -15,13 +15,37 @@ const smoother = ScrollSmoother.create({
 });
 
 /* EFECTO 2 SCROLL */
-let skewSetter = gsap.quickTo("#atabis", "skewY"), // fast
-    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+let skewSetter = gsap.quickTo("#enomiq", "skewY"), // fast
+	  clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
 
 ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-  onUpdate: self => skewSetter(clamp(self.getVelocity() / -50)),
-  onStop: () => skewSetter(0)
+	smooth: 2,
+  speed: 3,
+	effects: true,
+	onUpdate: self => skewSetter(clamp(self.getVelocity() / -50)),
+	onStop: () => skewSetter(0)
 });
 /* EFECTO 2 SCROLL */
+
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+      trigger: '.accordions',
+      pin: true,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 1,
+      ease: 'linear',
+    }
+})
+
+tl.to('.accordion .text', {
+  height: 0,
+  paddingBottom: 0,
+  opacity: 0,
+  stagger: .5,
+})
+tl.to('.accordion', {
+  marginBottom: -15,
+  stagger: .5,
+}, '<')

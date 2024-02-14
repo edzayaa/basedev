@@ -3,7 +3,7 @@ Init ScrollTrigger // Inicio de ScrollTrigger
 ------------------------------*/
 
 /* EFECTO 1 SCROLL */
-let paths = gsap.utils.toArray("#ovepiv path, #logo-smoother path, #logo-mouse");
+let paths = gsap.utils.toArray("#avekit path, #logo-smoother path, #logo-mouse");
 let byGreensock = document.querySelector("#by-greensock");
 
 let distPaths = gsap.utils.distribute({
@@ -13,7 +13,7 @@ let distPaths = gsap.utils.distribute({
 
 let logoTl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".ehivoc",
+    trigger: ".oyufuq",
     scrub: 1,
     start: "bottom 95%",
     end: "bottom center"
@@ -25,7 +25,7 @@ logoTl.to(paths, { x: distPaths })
 
 let gridTl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".eyedak",
+    trigger: ".aqezir",
     scrub: 1,
     start: "top center",
     end: "bottom+=10% bottom",
@@ -36,32 +36,32 @@ let gridTl = gsap.timeline({
 });
 
 gridTl.add("start")
-  .from(".axodaq", {
+  .from(".eyugug", {
     ease: "power1",
     scale: 3
   }, "start")
-  .from(".axunoh .osufig", {
+  .from(".efatos .ohozap", {
     duration: 0.6,
     xPercent: i => -((i + 1) * 40 + i * 100),
     yPercent: i => (i + 1) * 40 + i * 100
   }, "start")
-  .from(".ukofeh .osufig", {
+  .from(".oyuzop .ohozap", {
     duration: 0.6,
     xPercent: i => (i + 1) * 40 + i * 100,
     yPercent: i => (i + 1) * 40 + i * 100
   }, "start");
 
-gsap.from(".azayof", {
+gsap.from(".ukahec", {
   scale: 1/3,
   scrollTrigger: {
-    trigger: ".azayof",
+    trigger: ".ukahec",
     scrub: 1
   }
 });
 
-let pinSection = document.querySelector(".ofaviv")
-let pinContent1 = document.querySelector(".otuhor")
-let pinContent2 = document.querySelector(".abizoy")
+let pinSection = document.querySelector(".ovojih")
+let pinContent1 = document.querySelector(".ujotis")
+let pinContent2 = document.querySelector(".ipuvek")
 
 let pinTl = gsap.timeline({
   scrollTrigger: {
@@ -74,14 +74,14 @@ let pinTl = gsap.timeline({
   }
 });
 
-pinTl.fromTo(".otuhor", {
+pinTl.fromTo(".ujotis", {
   x: () => document.body.clientWidth * 0.9
 }, {
   x: () => -(pinContent1.offsetWidth),
   ease: "none"
 }, 0)
 
-pinTl.fromTo(".abizoy", {
+pinTl.fromTo(".ipuvek", {
   x: () => -pinContent2.offsetWidth + document.body.clientWidth * 0.1
 }, {
   x: () => document.body.clientWidth, 
